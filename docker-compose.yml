@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  catalog-image:
+    image: multi-shop-identity-api
+    container_name: identity-api
+    ports:
+      - "5001:8080"
+    networks:
+      - multishop-identity-network
+
+networks:
+  multishop-identity-network:
+    external: true
