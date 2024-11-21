@@ -1,7 +1,7 @@
 version: '3.8'
 
 services:
-  catalog-image:
+  identity-image:
     image: multi-shop-identity-api
     container_name: identity-api
     ports:
